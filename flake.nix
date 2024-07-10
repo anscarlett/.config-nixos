@@ -25,22 +25,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
-    # nix-homebrew = {
-    #   url = "github:zhaofengli-wip/nix-homebrew";
-    #   inputs.nix-darwin.follows = "nix-darwin";
-    # };
-    # homebrew-bundle = {
-    #   url = "github:homebrew/homebrew-bundle";
-    #   flake = false;
-    # };
-    # homebrew-core = {
-    #   url = "github:homebrew/homebrew-core";
-    #   flake = false;
-    # };
-    # homebrew-cask = {
-    #   url = "github:homebrew/homebrew-cask";
-    #   flake = false;
-    # };
   };
 
   outputs = {
@@ -52,10 +36,6 @@
     nix-darwin,
     rust-overlay,
     sfdx-nix,
-    # nix-homebrew,
-    # homebrew-bundle,
-    # homebrew-core,
-    # homebrew-cask,
   }: let
     nixos-user = "nixos";
     nixos-hostname = "nixos";
